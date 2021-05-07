@@ -9,3 +9,7 @@ You need at least Java 11 to run this code.
 Required Repositories:
 - jfreechart : 1.5.3 : https://mvnrepository.com/artifact/jfree/jfreechart
 - org.json : 20210307 : https://mvnrepository.com/artifact/org.json/json
+
+
+# Documentation
+Yea.. I need to write it. So.. Just wait :)
