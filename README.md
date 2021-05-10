@@ -15,12 +15,12 @@ Required Repositories:
 
 ## GetCurrency Class example
 
-```GetCurrency testCurrency = new GetCurrency();<br />```
+```GetCurrency testCurrency = new GetCurrency();```<br />
 ```testCurrency.getCurrency(String Cryptocurrency, String Fiat);```
 
 Return: double <br />
 Example: <br />
-```testCurrency.getCurrency("bitcoin", "usd");<br />```
+```testCurrency.getCurrency("bitcoin", "usd");```<br />
 Description: Get the current value, in the fiat, of the cryptocurrency<br />
 
 ```testCurrency.getCurrencyOnGivenDate(String Cryptocurrency, String Date (Format: dd-mm-yyyy), String Fiat);```<br />
