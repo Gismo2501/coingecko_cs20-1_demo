@@ -21,14 +21,14 @@ Required Repositories:
 Return: double <br />
 Example: <br />
 ```testCurrency.getCurrency("bitcoin", "usd");```<br />
-Description: Get the current value, in the fiat, of the cryptocurrency<br />
+Description: Get the current value, in the fiat, of the cryptocurrency<br /><br /><br />
 
 
 
 ```testCurrency.getCurrencyOnGivenDate(String Cryptocurrency, String Date (Format: dd-mm-yyyy), String Fiat);```<br />
 Return: double<br />
 Example: <br/>  ```testCurrency.getCurrency("bitcoin", "08-05-2021", "usd");```<br />
-Description: Get the value, in the fiat, of the cryptocurrency on a given date<br />
+Description: Get the value, in the fiat, of the cryptocurrency on a given date<br /><br />
 
 ## GetOtherInformation Class example
 
@@ -37,21 +37,21 @@ Description: Get the value, in the fiat, of the cryptocurrency on a given date<b
 ```testInformation.getDescription(String Cryptocurrency);```<br />
 Return: String<br />
 Example:<br /> ```testInformation.getCurrency("bitcoin");```<br />
-Description: Get the coin description<br />
+Description: Get the coin description<br /><br /><br />
 
 
 
 ```testInformation.getGenesisDate(String Cryptocurrency);```<br />
 Return: String<br />
 Example:<br /> ```testInformation.getGenesisDate("bitcoin");```<br />
-Description: Get the coin genesis date<br />
+Description: Get the coin genesis date<br /><br /><br />
 
 
 
 ```testInformation.getSupportedCoins();```<br />
 Return: void<br />
 Example:<br /> ```testInformation.getSupportedCoins();```<br />
-Description: List all supported coins<br />
+Description: List all supported coins<br /><br />
 
 ## CheckCurrencyInInterval Class example
 
@@ -60,7 +60,7 @@ Description: List all supported coins<br />
 ```testInterval.startCheck(String Cryptocurrency, String fiat, int time (in Seconds), int runs);```<br />
 Return: void<br />
 Example:<br /> ```testInterval.startCheck("bitcoin","usd","1","10");```<br />
-Description: Write current value of given coin in a file.<br />
+Description: Write current value of given coin in a file.<br /><br />
 
 
 ## Stonks Class example
@@ -71,7 +71,7 @@ Description: Write current value of given coin in a file.<br />
 
 Return: void<br />
 Example: <br />```stonk.wouldIBeRich("bitcoin", "usd", 100.50, "25-01-2020");```<br />
-Description: Shows you why you should invest in crypto!<br />
+Description: Shows you why you should invest in crypto!<br /><br />
 
 
 ## OHLC Class example
@@ -81,7 +81,7 @@ Description: Shows you why you should invest in crypto!<br />
 ```ohlc.getOHLCData(String Cryptocurrency, String fiat, String days (1, 7, 14, 30, 90, 180, 365, max);```<br />
 Return: void<br />
 Example: <br />```ohlc.getOHLCData("bitcoin", "usd", "max");```<br />
-Description: Creates a chart and shows you the OHLC from the cryptocurrency<br />
+Description: Creates a chart and shows you the OHLC from the cryptocurrency<br /><br />
 
 
 ## Trending Class example
