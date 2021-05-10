@@ -23,6 +23,8 @@ Example: <br />
 ```testCurrency.getCurrency("bitcoin", "usd");```<br />
 Description: Get the current value, in the fiat, of the cryptocurrency<br />
 
+
+
 ```testCurrency.getCurrencyOnGivenDate(String Cryptocurrency, String Date (Format: dd-mm-yyyy), String Fiat);```<br />
 Return: double<br />
 Example: <br/>  ```testCurrency.getCurrency("bitcoin", "08-05-2021", "usd");```<br />
@@ -37,10 +39,14 @@ Return: String<br />
 Example:<br /> ```testInformation.getCurrency("bitcoin");```<br />
 Description: Get the coin description<br />
 
+
+
 ```testInformation.getGenesisDate(String Cryptocurrency);```<br />
 Return: String<br />
 Example:<br /> ```testInformation.getGenesisDate("bitcoin");```<br />
 Description: Get the coin genesis date<br />
+
+
 
 ```testInformation.getSupportedCoins();```<br />
 Return: void<br />
@@ -56,6 +62,7 @@ Return: void<br />
 Example:<br /> ```testInterval.startCheck("bitcoin","usd","1","10");```<br />
 Description: Write current value of given coin in a file.<br />
 
+
 ## Stonks Class example
 
 ```Stonks stonk = new Stonks();```<br />
@@ -66,6 +73,7 @@ Return: void<br />
 Example: <br />```stonk.wouldIBeRich("bitcoin", "usd", 100.50, "25-01-2020");```<br />
 Description: Shows you why you should invest in crypto!<br />
 
+
 ## OHLC Class example
 
 ```OHLC ohlc = new OHLC();<br />```
@@ -74,6 +82,7 @@ Description: Shows you why you should invest in crypto!<br />
 Return: void<br />
 Example: <br />```ohlc.getOHLCData("bitcoin", "usd", "max");```<br />
 Description: Creates a chart and shows you the OHLC from the cryptocurrency<br />
+
 
 ## Trending Class example
 
