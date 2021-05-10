@@ -19,13 +19,14 @@ GetCurrency testCurrency = new GetCurrency();
 
 testCurrency.getCurrency(String Cryptocurrency, String Fiat);
 ```
-Return: double \n
-Example: testCurrency.getCurrency("bitcoin", "usd");
+Return: double <br />
+Example: <br />
+```java testCurrency.getCurrency("bitcoin", "usd");```
 Description: Get the current value, in the fiat, of the cryptocurrency
 
-testCurrency.getCurrencyOnGivenDate(String Cryptocurrency, String Date (Format: dd-mm-yyyy), String Fiat);
+```java testCurrency.getCurrencyOnGivenDate(String Cryptocurrency, String Date (Format: dd-mm-yyyy), String Fiat);```
 Return: double
-Example: testCurrency.getCurrency("bitcoin", "08-05-2021", "usd");
+Example: <br/> ```java testCurrency.getCurrency("bitcoin", "08-05-2021", "usd");```
 Description: Get the value, in the fiat, of the cryptocurrency on a given date
 
 ## GetOtherInformation Class example
