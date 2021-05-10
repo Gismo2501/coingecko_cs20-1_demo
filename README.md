@@ -15,7 +15,7 @@ Required Repositories:
 
 ## GetCurrency Class example
 
-```GetCurrency testCurrency = new GetCurrency();```<br />
+```GetCurrency testCurrency = new GetCurrency();```<br /><br />
 
 ```testCurrency.getCurrency(String Cryptocurrency, String Fiat);```
 Return: double <br />
@@ -32,7 +32,7 @@ Description: Get the value, in the fiat, of the cryptocurrency on a given date<b
 
 ## GetOtherInformation Class example
 
-```GetOtherInformation testInformation = new GetOtherInformation();```<br />
+```GetOtherInformation testInformation = new GetOtherInformation();```<br /><br />
 
 ```testInformation.getDescription(String Cryptocurrency);```<br />
 Return: String<br />
@@ -55,7 +55,7 @@ Description: List all supported coins<br /><br />
 
 ## CheckCurrencyInInterval Class example
 
-```CheckCurrencyInInterval testInterval = new CheckCurrencyInInterval();```<br />
+```CheckCurrencyInInterval testInterval = new CheckCurrencyInInterval();```<br /><br />
 
 ```testInterval.startCheck(String Cryptocurrency, String fiat, int time (in Seconds), int runs);```<br />
 Return: void<br />
@@ -65,7 +65,7 @@ Description: Write current value of given coin in a file.<br /><br />
 
 ## Stonks Class example
 
-```Stonks stonk = new Stonks();```<br />
+```Stonks stonk = new Stonks();```<br /><br />
 
 ```stonk.wouldIBeRich(String Cryptocurrency, String fiat, double money, String Date (Format: dd-mm-yyyy));```<br />
 
@@ -76,7 +76,7 @@ Description: Shows you why you should invest in crypto!<br /><br />
 
 ## OHLC Class example
 
-```OHLC ohlc = new OHLC();<br />```
+```OHLC ohlc = new OHLC();```<br /><br />
 
 ```ohlc.getOHLCData(String Cryptocurrency, String fiat, String days (1, 7, 14, 30, 90, 180, 365, max);```<br />
 Return: void<br />
@@ -86,7 +86,7 @@ Description: Creates a chart and shows you the OHLC from the cryptocurrency<br /
 
 ## Trending Class example
 
-```Trending trend = new Trending();<br />```
+```Trending trend = new Trending();```<br />
 
 ```trend.getTrendingCoin();```<br />
 Return: void<br />
