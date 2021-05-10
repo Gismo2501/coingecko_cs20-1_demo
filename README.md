@@ -14,11 +14,12 @@ Required Repositories:
 # Documentation
 
 ## GetCurrency Class example
-
+```java
 GetCurrency testCurrency = new GetCurrency();
 
 testCurrency.getCurrency(String Cryptocurrency, String Fiat);
-Return: double
+```
+Return: double \n
 Example: testCurrency.getCurrency("bitcoin", "usd");
 Description: Get the current value, in the fiat, of the cryptocurrency
 
