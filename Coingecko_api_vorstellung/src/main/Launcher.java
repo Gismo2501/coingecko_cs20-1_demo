@@ -20,6 +20,7 @@ public class Launcher {
 		CheckCurrencyInInterval interval = new CheckCurrencyInInterval();
 		Stonks stonk = new Stonks();
 		OHLC ohlc = new OHLC();
+		Trending trend = new Trending();
 		
 		/*
 		
@@ -42,7 +43,7 @@ public class Launcher {
 		
 		while(program) {
 			System.out.println("Powered by CoinGecko");
-			System.out.println("Bitte wählen Sie aus! \n 1. für Aktuellen Preis \n 2. für Preis aus der Vergangenheit \n 3. um eine Englische Beschreibung zu bekommen \n 4. Um das Erstelldatum anzuzeigen \n 5. um alle Unterstützten Coins zu bekommen \n 6. um Preise in einem bestimmten Interval abzurufen \n 7. um zu wissen, wie viel du heute hättest, wenn du damals investiert hättest \n 8. um ein Chart Diagramm zu erstellen \n 9. um das Programm abzubrechen");
+			System.out.println("Bitte wählen Sie aus! \n 1. für Aktuellen Preis \n 2. für Preis aus der Vergangenheit \n 3. um eine Englische Beschreibung zu bekommen \n 4. Um das Erstelldatum anzuzeigen \n 5. um alle Unterstützten Coins zu bekommen \n 6. um Preise in einem bestimmten Interval abzurufen \n 7. um zu wissen, wie viel du heute hättest, wenn du damals investiert hättest \n 8. um ein Chart Diagramm zu erstellen \n 9. um die Trendcoins der letzten 24 Std. anzuzeigen (nach Coingecko Suche) \n 10. um das Programm abzubrechen");
 			String auswahl = scan.next();
 			if (auswahl.equals("1")) {
 				System.out.println("Geben Sie eine Kryptowährung an.");
@@ -126,6 +127,10 @@ public class Launcher {
 			}
 			
 			else if (auswahl.equals("9")) {
+				trend.getTrendingCoin();
+			}
+			
+			else if (auswahl.equals("10")) {
 				System.out.println("Das Programm wird abgebrochen!");
 				System.out.println("Vielen dank für die Nutzung");
 				program = false;
