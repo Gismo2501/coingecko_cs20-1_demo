@@ -12,4 +12,30 @@ Required Repositories:
 
 
 # Documentation
-Yea.. I need to write it. So.. Just wait :)
+
+## GetCurrency Class example
+
+GetCurrency testCurrency = new GetCurrency();
+
+testCurrency.getCurrency(String Cryptocurrency, String Fiat);
+Return: double
+Example: testCurrency.getCurrency("bitcoin", "usd");
+
+testCurrency.getCurrencyOnGivenDate(String Cryptocurrency, String Date (Format: dd-mm-yyyy), String Fiat);
+Return: double
+Example: testCurrency.getCurrency("bitcoin", "08-05-2021", "usd");
+
+
+## GetOtherInformation Class example
+
+GetOtherInformation testInformation = new GetOtherInformation();
+
+testCurrency.getCurrency(String Cryptocurrency, String Fiat);
+Return: double
+Example: testCurrency.getCurrency("bitcoin", "usd");
+
+testCurrency.getCurrencyOnGivenDate(String Cryptocurrency, String Date (Format: dd-mm-yyyy), String Fiat);
+Return: double
+Example: testCurrency.getCurrency("bitcoin", "08-05-2021", "usd");
+
+
