@@ -16,8 +16,8 @@ Required Repositories:
 ## GetCurrency Class example
 
 ```GetCurrency testCurrency = new GetCurrency();```<br />
-```testCurrency.getCurrency(String Cryptocurrency, String Fiat);```
 
+```testCurrency.getCurrency(String Cryptocurrency, String Fiat);```
 Return: double <br />
 Example: <br />
 ```testCurrency.getCurrency("bitcoin", "usd");```<br />
