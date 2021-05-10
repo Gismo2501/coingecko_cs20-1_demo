@@ -56,10 +56,11 @@ Example: testInterval.startCheck("bitcoin","usd","1","10");
 Description: Write current value of given coin in a file.
 
 ## Stonks Class example
-
+```java
 Stonks stonk = new Stonks();
-
+```
 stonk.wouldIBeRich(String Cryptocurrency, String fiat, double money, String Date (Format: dd-mm-yyyy));
+
 Return: void
 Example: stonk.wouldIBeRich("bitcoin", "usd", 100.50, "25-01-2020");
 Description: Shows you why you should invest in crypto!
