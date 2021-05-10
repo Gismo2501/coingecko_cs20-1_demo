@@ -22,13 +22,16 @@ public class Trending {
 
 			HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
 			//The response is always a JSON String --> Converts response String into JSON Object with org.json Class
-			JSONArray coinArray = new JSONArray(response.body());
+			JSONObject coin = new JSONObject(response.body());
+			JSONArray coinArray = new JSONArray(coin.getJSONArray("coins"));
+			
 			//Go through the Array
 			for (Object coinInArr : coinArray) {
 				//Convert current Object into JSON Object
-				JSONObject coin = (JSONObject) coinInArr;
+				JSONObject coin_data = (JSONObject) coinInArr;
+				
 				//Fetch information from current object
-				System.out.println("ID: "+coin.get("id")+"  -  "+"Name: "+coin.get("name")+"  -  "+coin.get("symbol"));
+				System.out.println("Platz: "+(coin_data.getJSONObject("item").getInt("score")+1)+"  -  "+"ID: "+coin_data.getJSONObject("item").get("id")+"  -  "+"Name: "+coin_data.getJSONObject("item").get("name")+"  -  "+"Symbol: "+coin_data.getJSONObject("item").get("symbol"));
 			}
 
 			//Catch JSON Error for Example: wrong currency given or not supported currency
