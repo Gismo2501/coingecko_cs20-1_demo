@@ -87,19 +87,14 @@ public class OHLC {
 			
 			
 			
-			try {
+			
 				for (int j = 0; j < jsonArrayArray.size(); j++) {
 					Date d = format.parse(timestamp(jsonArrayArray.get(j).get(0).toString()));
 					OHLCDataItem tempItem = new OHLCDataItem(d, 
 							jsonArrayArray.get(j).getDouble(1), jsonArrayArray.get(j).getDouble(2),jsonArrayArray.get(j).getDouble(3), jsonArrayArray.get(j).getDouble(4), 0);
 					
 					dataItem[j] = tempItem;
-					
 				}
-			} catch (Exception err) {
-				System.out.println(err.toString());
-				
-			}
 			
 			
 		    OHLCDataset dataset = new DefaultOHLCDataset(cur+"price", dataItem);
