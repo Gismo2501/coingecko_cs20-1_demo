@@ -50,7 +50,7 @@ public class Launcher {
 				crypto = scan.next();
 				System.out.println("Geben Sie jetzt ihren Wechselkurs an!");
 				fiat = scan.next();
-				System.out.println("Das ist der Aktuelle "+crypto+" Kurs in "+fiat+": "+cur.getCurrency(crypto, fiat));
+				System.out.printf("Das ist der Aktuelle "+crypto+" Kurs in "+fiat+": "+"%1$,.2f %n", cur.getCurrency(crypto, fiat));
 				
 			}
 			
@@ -61,7 +61,7 @@ public class Launcher {
 				fiat = scan.next();
 				System.out.println("Geben Sie das Datum an (Format: dd-mm-yyyy)!");
 				date = scan.next();
-				System.out.println("Das ist der Kurs von "+crypto+" in der Währung "+fiat+" am Datum "+date+": "+cur.getCurrencyOnGivenDate(crypto, date, fiat));
+				System.out.printf("Das ist der Kurs von "+crypto+" in der Währung "+fiat+" am Datum "+date+": %1$,.2f %n", cur.getCurrencyOnGivenDate(crypto, date, fiat));
 			}
 			
 			else if (auswahl.equals("3")) {

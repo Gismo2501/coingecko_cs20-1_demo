@@ -18,7 +18,7 @@ public class Stonks {
 			double oldMenge = money / getPriceOnDate(cur, date, fiat);
 			double newMenge = oldMenge * getCurPrice(cur, fiat);
 			
-			System.out.println("Du hast damals "+money+" ausgegeben und dafür "+oldMenge+" "+cur+" bekommen. Das wäre heute "+newMenge+fiat+" Wert.");	
+			System.out.printf("Du hast damals "+money+" "+fiat+" ausgegeben und dafür "+oldMenge+" "+cur+" bekommen. Das wäre heute %1$.2f "+fiat+" Wert. %n", newMenge);	
 		} catch (Exception err) {
 			System.out.println(err.toString());
 		}
