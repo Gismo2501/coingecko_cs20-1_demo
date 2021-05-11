@@ -10,7 +10,7 @@ public class Launcher {
 		String fiat = ""; 
 		String date = "";
 		int time = 1;
-		int durchlauf = 1;
+		int run = 1;
 		double money = 0.0;
 		String days = "1";
 		
@@ -92,15 +92,15 @@ public class Launcher {
 					time = scan.nextInt();
 				}
 				System.out.println("Bitte geben Sie die Durchläufe an.");
-				durchlauf = scan.nextInt();
-				while (durchlauf < 1) {
+				run = scan.nextInt();
+				while (run < 1) {
 					System.out.println("Es muss mindestens ein Durchlauf passieren. Bitte wiederholen Sie die Eingabe.");
-					durchlauf = scan.nextInt();
+					run = scan.nextInt();
 				}
 				System.out.println("Das Programm läuft nun im Hintergrund! Sie können jetzt noch andere Funktionen nutzen.");
 				System.out.println("Die Datei hat das Format: crypto-yyyy-mm-dd--hh-mm.txt");
 				System.out.println("Dateipfad:");
-				interval.startCheck(crypto, fiat, time, durchlauf);
+				interval.startCheck(crypto, fiat, time, run);
 			}
 			
 			else if (auswahl.equals("7")) {
