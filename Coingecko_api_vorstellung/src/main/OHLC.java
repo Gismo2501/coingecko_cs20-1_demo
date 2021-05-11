@@ -28,14 +28,14 @@ public class OHLC {
 	
 	
 	public String timestamp(String timeInMS) {
-		BigInteger test = new BigInteger(timeInMS);
+		BigInteger bigTime = new BigInteger(timeInMS);
 		Calendar cal = Calendar.getInstance();
 		
-		cal.setTimeInMillis(test.longValue());
+		cal.setTimeInMillis(bigTime.longValue());
 		
 		
 		
-		
+		// Convert Calender into the parts of the date
 		int mYear = cal.get(Calendar.YEAR);
 		int mMonth = cal.get(Calendar.MONTH)+1;
 		int mDay = cal.get(Calendar.DAY_OF_MONTH);
